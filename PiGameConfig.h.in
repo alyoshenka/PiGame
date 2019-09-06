@@ -1,0 +1,3 @@
+// configured options and settings for tutorial
+#define PiGame_VERSION_MAJOR @PiGame_VERSION_MAJOR@
+#define PiGame_VERSION_MINOR @PiGame_VERSION_MINOR@
