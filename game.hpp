@@ -3,11 +3,13 @@
 #include "raylib/src/raylib.h"
 
 #include "inputManager.hpp"
+#include "entity.hpp"
 
 class game 
 {
 	inputManager inputs;
-	
+	entity player;
+		
 public:
 	game();
 	
@@ -30,6 +32,7 @@ void game::init()
 	screenHeight = 200;
 	
 	inputs.init();
+	player.init();
 	
 	InitWindow(screenWidth, screenHeight, "PiGame");
 }
@@ -54,6 +57,8 @@ void game::draw()
     {
 		DrawCircle(100, 100, 20, BLUE);
     }
+    
+    player.draw();
     
 	EndDrawing();
 }
