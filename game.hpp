@@ -34,6 +34,8 @@ void game::init()
 	inputs.init();
 	player.init();
 	
+	player.speed = 50;
+	
 	InitWindow(screenWidth, screenHeight, "PiGame");
 }
 
@@ -51,11 +53,11 @@ void game::draw()
 	DrawText("Alexi compiled raylib to pi", 20, 50, 20, LIGHTGRAY);
     if(inputs.button.getPushed())
     {
-		DrawCircle(100, 100, 20, GREEN);
-    }
-    else
-    {
-		DrawCircle(100, 100, 20, BLUE);
+		player.move({1, 0});
+		if(player.pos.x > screenWidth)
+		{
+			player.pos.x = 0;
+		}
     }
     
     player.draw();

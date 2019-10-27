@@ -1,3 +1,6 @@
+#include </usr/include/wiringPi.h>
+#include <wiringPi.h>
+
 struct inputRead
 {
 	int pin;
