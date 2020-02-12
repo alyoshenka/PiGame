@@ -1,4 +1,3 @@
-#include </usr/include/wiringPi.h>
 #include <wiringPi.h>
 
 struct inputRead
@@ -30,7 +29,7 @@ inputRead::inputRead()
 void inputRead::update()
 {
 	wasDown = isDown;
-	isDown = digitalRead(pin);
+	// isDown = digitalRead(pin);
 }
 
 void inputRead::setPin(int number)

@@ -7,4 +7,4 @@ echo "building"
 make 
 
 echo "executing"
-"./PiGame"
+"sudo /home/jay/PiGame/PiGame"

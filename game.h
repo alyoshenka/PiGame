@@ -1,7 +1,6 @@
 #pragma once
 
-#include "raylib/src/raylib.h"
-#include </usr/include/wiringPi.h>
+#include "/home/jay/raylib/src/raylib.h"
 #include <wiringPi.h>
 
 class game 

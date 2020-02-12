@@ -1,4 +1,5 @@
-#include </usr/include/wiringPi.h>
+#pragma once
+
 #include <wiringPi.h>
 
 #include "inputs.hpp"

@@ -1,6 +1,5 @@
 #include "PiGameConfig.h"
-#include "raylib/src/raylib.h"
-#include </usr/include/wiringPi.h>
+#include "/usr/include/raylib/src/raylib.h"
 #include <wiringPi.h>
 #include <iostream>
 
